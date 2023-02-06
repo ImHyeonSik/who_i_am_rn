@@ -28,7 +28,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 
 const Section: React.FC<{
-  title: string;
+  title: string;c
 }> = ({ children, title }) => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
