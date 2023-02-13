@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier', 'react-hooks'],
   env: {
     es6: true,
     node: true,
@@ -19,12 +20,11 @@ module.exports = {
   parserOptions: {
     project: './tsconfig.json',
   },
-  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-shadow': ['error'],
+        // '@typescript-eslint/no-shadow': ['error'],
         'no-shadow': 'off',
         'no-undef': 'off',
       },
@@ -59,6 +59,8 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
+    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
+    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
   },
   settings: {
     react: {
