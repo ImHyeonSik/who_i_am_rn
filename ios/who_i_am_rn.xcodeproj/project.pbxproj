@@ -15,6 +15,8 @@
 		7699B88040F8A987B510C191 /* libPods-who_i_am_rn-who_i_am_rnTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-who_i_am_rn-who_i_am_rnTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		B55E6D0C29990D52003BEC07 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B55E6D0B29990D52003BEC07 /* RCTCalendarModule.m */; };
+		B5E88ADD29A1CEF0006040F7 /* RCTAlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */; };
+		B5E88ADE29A1CEF0006040F7 /* RCTAlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-who_i_am_rn-who_i_am_rnTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-who_i_am_rn-who_i_am_rnTests.release.xcconfig"; path = "Target Support Files/Pods-who_i_am_rn-who_i_am_rnTests/Pods-who_i_am_rn-who_i_am_rnTests.release.xcconfig"; sourceTree = "<group>"; };
 		B55E6D0A29990B61003BEC07 /* RCTCalendarModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTCalendarModule.h; sourceTree = "<group>"; };
 		B55E6D0B29990D52003BEC07 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
+		B5E88ADB29A1CCC7006040F7 /* RCTAlertModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTAlertModule.h; path = who_i_am_rn/RCTAlertModule.h; sourceTree = "<group>"; };
+		B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTAlertModule.m; path = who_i_am_rn/RCTAlertModule.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				B5E88ADB29A1CCC7006040F7 /* RCTAlertModule.h */,
+				B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */,
 			);
 			name = who_i_am_rn;
 			sourceTree = "<group>";
@@ -407,6 +413,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E88ADE29A1CEF0006040F7 /* RCTAlertModule.m in Sources */,
 				00E356F31AD99517003FC87E /* who_i_am_rnTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +424,7 @@
 			files = (
 				B55E6D0C29990D52003BEC07 /* RCTCalendarModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				B5E88ADD29A1CEF0006040F7 /* RCTAlertModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

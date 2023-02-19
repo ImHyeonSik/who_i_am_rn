@@ -6,9 +6,32 @@
 //
 
 #import "RCTCalendarModule.h"
+#import <React/RCTLog.h>
 
-@implementation RCTCalendarModule : NSObject
 
-RCT_EXPORT_MODULE(CalendarModuleFoo);
+@implementation RCTCalendarModule
+
+RCT_EXPORT_MODULE();
+
+- (NSDictionary *)constantsToExport
+{
+ return @{ @"DEFAULT_EVENT_NAME": @"New Event" };
+}
+
+RCT_EXPORT_METHOD(createCalendarEvent:(NSString *)title
+                 location:(NSString *)location
+                 resolver:(RCTPromiseResolveBlock)resolve
+                 rejecter:(RCTPromiseRejectBlock)reject)
+{
+// NSInteger eventId = createCalendarEvent();
+// if (eventId) {
+//    resolve(@(eventId));
+  resolve(title);
+//  } else {
+//    reject(@"event_failure", @"no event id returned", nil);
+//  }
+}
+
 
 @end
+
