@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Button,
   SafeAreaView,
@@ -6,6 +6,10 @@ import {
   TouchableOpacity,
   NativeModules,
   Platform,
+  View,
+  Pressable,
+  StyleSheet,
+  Dimensions,
 } from 'react-native';
 
 import AlertModule from '../nativeModules/Alert';
@@ -14,6 +18,11 @@ import ToastModules from '../nativeModules/ToastModules';
 
 const Dashboard = () => {
   // useTimeout(() => call(), 10, 0);
+  const [dimension, setDimension] = useState(Dimensions.get('window'));
+
+  useEffect(() => {
+    console.log('dashboard window size ', dimension.width);
+  }, []);
 
   const call = async () => {
     // if (Platform.OS === 'android') {
@@ -51,9 +60,38 @@ const Dashboard = () => {
       <TouchableOpacity onPress={() => {}}>
         <Text>fwwf</Text>
       </TouchableOpacity>
-      <Button title={'native module button'} color="#841584" onPress={call} />
-      <Button title={'native toast '} color="red" onPress={toast} />
+      <View style={css.buttonContainer}>
+        <Pressable
+          style={{
+            backgroundColor: 'green',
+            width: dimension.width * 0.4,
+            alignItems: 'center',
+          }}
+          onPress={call}
+        >
+          <Text style={{ color: 'white' }}>only android Toast</Text>
+        </Pressable>
+        <Pressable
+          style={{
+            backgroundColor: 'red',
+            width: dimension.width * 0.4,
+            alignItems: 'center',
+          }}
+          onPress={toast}
+        >
+          <Text style={{ color: 'white' }}>only iOS Alert</Text>
+        </Pressable>
+      </View>
     </SafeAreaView>
   );
 };
+
+const css = StyleSheet.create({
+  buttonContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
 export default Dashboard;

@@ -17,6 +17,10 @@
 		B55E6D0C29990D52003BEC07 /* RCTCalendarModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B55E6D0B29990D52003BEC07 /* RCTCalendarModule.m */; };
 		B5E88ADD29A1CEF0006040F7 /* RCTAlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */; };
 		B5E88ADE29A1CEF0006040F7 /* RCTAlertModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */; };
+		B5E88AE229A21060006040F7 /* BrightModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E88AE129A21060006040F7 /* BrightModule.swift */; };
+		B5E88AE329A21060006040F7 /* BrightModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E88AE129A21060006040F7 /* BrightModule.swift */; };
+		B5E88AE529A211AF006040F7 /* BrightModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88AE429A211AF006040F7 /* BrightModule.m */; };
+		B5E88AE629A211AF006040F7 /* BrightModule.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E88AE429A211AF006040F7 /* BrightModule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		B55E6D0B29990D52003BEC07 /* RCTCalendarModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTCalendarModule.m; sourceTree = "<group>"; };
 		B5E88ADB29A1CCC7006040F7 /* RCTAlertModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RCTAlertModule.h; path = who_i_am_rn/RCTAlertModule.h; sourceTree = "<group>"; };
 		B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RCTAlertModule.m; path = who_i_am_rn/RCTAlertModule.m; sourceTree = "<group>"; };
+		B5E88ADF29A2105F006040F7 /* who_i_am_rn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "who_i_am_rn-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5E88AE029A2105F006040F7 /* who_i_am_rnTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "who_i_am_rnTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B5E88AE129A21060006040F7 /* BrightModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BrightModule.swift; path = who_i_am_rn/BrightModule.swift; sourceTree = "<group>"; };
+		B5E88AE429A211AF006040F7 /* BrightModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = BrightModule.m; path = who_i_am_rn/BrightModule.m; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -101,6 +109,10 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				B5E88ADB29A1CCC7006040F7 /* RCTAlertModule.h */,
 				B5E88ADC29A1CEF0006040F7 /* RCTAlertModule.m */,
+				B5E88AE129A21060006040F7 /* BrightModule.swift */,
+				B5E88ADF29A2105F006040F7 /* who_i_am_rn-Bridging-Header.h */,
+				B5E88AE029A2105F006040F7 /* who_i_am_rnTests-Bridging-Header.h */,
+				B5E88AE429A211AF006040F7 /* BrightModule.m */,
 			);
 			name = who_i_am_rn;
 			sourceTree = "<group>";
@@ -215,10 +227,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 1340;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -413,8 +426,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5E88AE329A21060006040F7 /* BrightModule.swift in Sources */,
 				B5E88ADE29A1CEF0006040F7 /* RCTAlertModule.m in Sources */,
 				00E356F31AD99517003FC87E /* who_i_am_rnTests.m in Sources */,
+				B5E88AE629A211AF006040F7 /* BrightModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +441,8 @@
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
 				B5E88ADD29A1CEF0006040F7 /* RCTAlertModule.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B5E88AE229A21060006040F7 /* BrightModule.swift in Sources */,
+				B5E88AE529A211AF006040F7 /* BrightModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,7 +461,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-who_i_am_rn-who_i_am_rnTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -463,6 +482,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "who_i_am_rnTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/who_i_am_rn.app/who_i_am_rn";
 			};
 			name = Debug;
@@ -471,7 +493,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-who_i_am_rn-who_i_am_rnTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = who_i_am_rnTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -487,6 +511,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "who_i_am_rnTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/who_i_am_rn.app/who_i_am_rn";
 			};
 			name = Release;
@@ -498,7 +524,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XUTWYM7UGB;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = who_i_am_rn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,6 +538,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = who_i_am_rn;
+				SWIFT_OBJC_BRIDGING_HEADER = "who_i_am_rn-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -526,7 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XUTWYM7UGB;
 				INFOPLIST_FILE = who_i_am_rn/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -539,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = who_i_am_rn;
+				SWIFT_OBJC_BRIDGING_HEADER = "who_i_am_rn-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";

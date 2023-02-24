@@ -9,6 +9,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.config.ReactFeatureFlags;
 import com.facebook.soloader.SoLoader;
+import com.who_i_am_rn.Bright.BrightModulePackage;
 import com.who_i_am_rn.Toast.ToastModulePackage;
 import com.who_i_am_rn.newarchitecture.MainApplicationReactNativeHost;
 import java.lang.reflect.InvocationTargetException;
@@ -31,6 +32,7 @@ public class MainApplication extends Application implements ReactApplication {
           // packages.add(new MyReactNativePackage());
             packages.add(new CalendarReactPackage());
             packages.add(new ToastModulePackage());
+            packages.add(new BrightModulePackage());
           return packages;
         }
 
